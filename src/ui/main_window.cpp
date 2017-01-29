@@ -43,7 +43,8 @@ MainWindow::MainWindow(
     // --------
     // widget #1
     // get the path to the working directory
-    QString root_path = QDir::rootPath();
+    //QString root_path = QDir::rootPath();
+    QString root_path = QDir::homePath();
 
     // set the tree view to follow a directory parser model
     dir_model_ = new QFileSystemModel( this );
